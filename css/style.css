@@ -1,0 +1,66 @@
+div {
+    color: white;   
+}
+
+.container {
+    width: 400px;
+    padding: 1rem;
+    margin: 0 auto;
+    border: solid 1px black;
+    background-color: #cccccc;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box {
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;    
+}
+
+.red-box {
+    background-color: red;
+    float: left;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.red-box:hover {
+    background-color: blueviolet;
+    color: yellow;
+    width: 200px;
+}
+
+.green-box {
+    background-color: green;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.green-box:hover {
+    background-color: aqua;
+    color: yellow;
+    height: 500px;
+}
+
+.blue-box {
+    background-color: blue;
+    clear: left;
+}
+
+.blue-box:hover{
+    background-color: red;
+}
+h1 {
+    display: inline-block;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
